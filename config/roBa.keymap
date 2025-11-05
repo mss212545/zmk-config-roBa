@@ -117,10 +117,10 @@
 
         FUNCTION {
             bindings = <
-&kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN                               &kp PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL
-&kp EXCLAMATION   &kp COLON          &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans       &mkp MB1      &kp CAPS       &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0
-&mt LSHFT CARET   &kp SEMICOLON      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans       &mo 2         &kp STAR       &kp SLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ESCAPE
-&kp LCTRL         &kp LSHFT          &kp LEFT_ALT          &kp TAB                &kp SPACE    &mo 1         &kp BACKSPACE  &kp ENTER                                            &trans
+&kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN                                 &kp PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL
+&kp EXCLAMATION   &kp COLON          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp UNDER      &mkp MB1      &kp CAPS       &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0
+&mt LSHFT CARET   &kp SEMICOLON      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH  &mo 2         &kp STAR       &kp SLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ESCAPE
+&kp LCTRL         &kp LSHFT          &kp LEFT_ALT          &kp TAB                &kp SPACE      &mo 1         &kp BACKSPACE  &kp ENTER                                            &trans
             >;
         };
 
