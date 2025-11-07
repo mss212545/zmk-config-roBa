@@ -28,7 +28,7 @@
 #define JP_KANA         LANGUAGE_1        // かな
 #define JP_EISU         LANGUAGE_2        // 英数
 #define JP_HANZEN       GRAVE             // 半角/全角
-#define ZMK_MOUSE_POINTING_SCRL_VAL 100
+#define ZMK_MOUSE_POINTING_SCRL_VAL 80
 
 &mt {
     flavor = "balanced";
@@ -103,7 +103,7 @@
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
             tap-ms = <20>;
         };
     };
@@ -119,7 +119,6 @@
 &kp LCTRL         &kp LSHFT  &kp LEFT_ALT  &kp TAB  &kp SPACE  &mo 1         &kp BACKSPACE  &kp ENTER                             &kp SLASH
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
             sensor-bindings = <&scroll_up_down>;
         };
 
