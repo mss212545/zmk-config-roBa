@@ -28,6 +28,7 @@
 #define JP_KANA         LANGUAGE_1        // かな
 #define JP_EISU         LANGUAGE_2        // 英数
 #define JP_HANZEN       GRAVE             // 半角/全角
+#define ZMK_MOUSE_POINTING_SCRL_VAL 100
 
 &mt {
     flavor = "balanced";
@@ -91,13 +92,19 @@
     };
 
     behaviors {
-        lt_to_layer_0: lt_to_layer_0 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
+        //lt_to_layer_0: lt_to_layer_0 {
+        //    compatible = "zmk,behavior-hold-tap";
+        //    label = "LAYER_TAP_TO_0";
+        //    bindings = <&mo>, <&to_layer_0>;
+        //
+        //    #binding-cells = <2>;
+        //    tapping-term-ms = <200>;
+        //};
+        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            tap-ms = <20>;
         };
     };
 
@@ -112,7 +119,8 @@
 &kp LCTRL         &kp LSHFT  &kp LEFT_ALT  &kp TAB  &kp SPACE  &mo 1         &kp BACKSPACE  &kp ENTER                             &kp SLASH
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            //sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         FUNCTION {
@@ -131,6 +139,8 @@
 &mt LEFT_SHIFT F1  &kp F2          &kp F3        &kp F4   &kp F5     &mo 2         &lt_to_layer_0 6 SEMICOLON  &trans     &trans  &trans  &trans  &trans
 &kp LEFT_CONTROL   &kp LEFT_SHIFT  &kp LEFT_ALT  &kp TAB  &kp SPACE  &mo 1         &kp BACKSPACE               &kp ENTER                          &trans
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         ARROW {
@@ -141,7 +151,8 @@
 &trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            //sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         MOUSE {
@@ -151,6 +162,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         SCROLL {
@@ -160,6 +173,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_6 {
