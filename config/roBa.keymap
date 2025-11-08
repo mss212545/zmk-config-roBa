@@ -132,7 +132,7 @@
 &kp LCTRL         &kp LSHFT          &kp LEFT_ALT          &kp TAB                &kp SPACE      &mo 1         &kp BACKSPACE  &kp ENTER                                            &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp DOWN UP>;
         };
 
         NUM {
@@ -143,7 +143,7 @@
 &kp LEFT_CONTROL   &kp LEFT_SHIFT  &kp LEFT_ALT  &kp TAB  &kp SPACE  &mo 1         &kp BACKSPACE               &kp ENTER                          &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp DOWN UP>;
         };
 
         ARROW {
@@ -154,7 +154,7 @@
 &trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp DOWN UP>;
         };
 
         MOUSE {
@@ -165,7 +165,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp DOWN UP>;
         };
 
         SCROLL {
