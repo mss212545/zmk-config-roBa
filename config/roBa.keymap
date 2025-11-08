@@ -119,6 +119,7 @@
 &kp LCTRL         &kp LSHFT  &kp LEFT_ALT  &kp TAB  &kp SPACE  &mo 1         &kp BACKSPACE  &kp ENTER                             &kp SLASH
             >;
 
+            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
             sensor-bindings = <&scroll_up_down>;
         };
 
