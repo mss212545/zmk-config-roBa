@@ -28,7 +28,7 @@
 #define JP_KANA         LANGUAGE_1        // かな
 #define JP_EISU         LANGUAGE_2        // 英数
 #define JP_HANZEN       GRAVE             // 半角/全角
-#define ZMK_MOUSE_POINTING_SCRL_VAL 50
+#define ZMK_MOUSE_POINTING_SCRL_VAL 200
 
 &mt {
     flavor = "balanced";
