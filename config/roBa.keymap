@@ -91,10 +91,10 @@
 
         FUNCTION {
             bindings = <
-&kp SQT           &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN                                       &kp PLUS   &kp N7        &kp N8        &kp N9        &kp EQUAL
-&kp HASH          &kp COLON          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp UNDERSCORE  &kp LS(LG(S))      &kp CAPS       &kp MINUS  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0
-&kp CARET         &kp SEMICOLON      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH   &trans             &kp ESCAPE     &kp SLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RS(SEMICOLON)
-&kp LEFT_CONTROL  &kp LSHFT          &kp LEFT_ALT          &kp TAB                &kp SPACE       &trans             &kp BACKSPACE  &kp ENTER                                            &trans
+&kp SQT           &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN                                    &kp PLUS   &kp N7        &kp N8        &kp N9        &kp EQUAL
+&kp HASH          &kp COLON          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp UNDERSCORE  &kp LS(LG(S))      &kp CAPS    &kp MINUS  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0
+&kp CARET         &kp SEMICOLON      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH   &trans             &kp ESCAPE  &kp SLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RS(SEMICOLON)
+&kp LEFT_CONTROL  &kp LSHFT          &kp LEFT_ALT          &kp TAB                &kp SPACE       &trans             &kp DELETE  &kp ENTER                                            &trans
             >;
         };
 
@@ -109,10 +109,10 @@
 
         ARROW {
             bindings = <
-&kp F11            &kp F12  &kp F13  &kp F14  &kp F15                      &trans  &trans  &trans  &trans  &trans
-&kp F6             &kp F7   &kp F8   &kp F9   &kp F10  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&mt LEFT_SHIFT F1  &kp F2   &kp F3   &kp F4   &kp F5   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans             &trans   &trans   &trans   &trans   &trans      &trans  &trans                          &trans
+&kp F11            &kp F12  &kp F13  &kp F14  &kp F15                      &trans  &trans    &trans    &trans    &trans
+&kp F6             &kp F7   &kp F8   &kp F9   &kp F10  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&mt LEFT_SHIFT F1  &kp F2   &kp F3   &kp F4   &kp F5   &trans      &trans  &trans  &trans    &trans    &trans    &trans
+&trans             &trans   &trans   &trans   &trans   &trans      &trans  &trans                                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
