@@ -86,7 +86,7 @@
 &kp LCTRL         &kp LEFT_SHIFT  &kp LEFT_ALT  &kp TAB  &kp SPACE  &mo 1              &kp BACKSPACE  &kp ENTER                                &kp SLASH
             >;
 
-            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN>;
+            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
 
         FUNCTION {
