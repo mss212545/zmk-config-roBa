@@ -81,12 +81,14 @@
         default_layer {
             bindings = <
 &kp Q             &kp W           &kp E         &kp R    &kp T                                &kp Y      &kp U  &kp I      &kp O       &kp P
-&kp A             &kp S           &kp D         &kp F    &kp G      &to 3      &kp CAPSLOCK   &kp H      &kp J  &kp K      &kp L       &kp MINUS
+&kp A             &kp S           &kp D         &kp F    &kp G      &mo 3      &kp CAPSLOCK   &kp H      &kp J  &kp K      &kp L       &kp MINUS
 &mt LEFT_SHIFT Z  &kp X           &kp C         &kp V    &kp B      &mo 2      &kp ESCAPE     &kp N      &kp M  &kp COMMA  &kp PERIOD  &kp COLON
 &kp LCTRL         &kp LEFT_SHIFT  &kp LEFT_ALT  &kp TAB  &kp SPACE  &mo 1      &kp BACKSPACE  &kp ENTER                                &kp SLASH
             >;
 
-            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
+            sensor-bindings =
+                <&inc_dec_kp DOWN_ARROW UP_ARROW>,
+                <&inc_dec_kp 0 0>;
         };
 
         FUNCTION {
